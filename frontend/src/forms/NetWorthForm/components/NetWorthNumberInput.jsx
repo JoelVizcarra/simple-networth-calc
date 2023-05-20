@@ -35,6 +35,7 @@ const NetWorthNumberInput = ({ name, label, ...otherProps }) => {
           <Grid item xs={3}>
             <FormControl fullWidth>
               <Input
+                type="number"
                 {...field}
                 onChange={(e) => field.onChange(transformNumber.output(e))}
                 fullWidth
