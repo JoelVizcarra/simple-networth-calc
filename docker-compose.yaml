@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+  simple-networth-calc-backend:
+    container_name: simple-networth-calc-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend/src:/app/src
+    command: npm run start
+    ports:
+      - '8000:8000'
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8000
+      EXCHANGE_API_URL: https://api.freecurrencyapi.com/v1/latest
+      EXCHANGE_API_KEY: 8kYx6wN4ROQlVPbTj3Ew1MFshW29wezCIZAYMC8D
+
+  simple-networth-calc-frontend:
+    container_name: simple-networth-calc-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend/src:/app/src
+    command: npm run dev
+    ports:
+      - '3000:3000'
