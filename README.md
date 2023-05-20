@@ -9,9 +9,9 @@ Simple Fastify - React net worth calculator app
 
 1. Build services
 
-  ```bash
-    docker-compose up -d --build
-  ```
+   ```bash
+     docker-compose up -d --build
+   ```
 
 1. Navigate to http://localhost:3000 and try the calculator
 
@@ -19,30 +19,30 @@ Simple Fastify - React net worth calculator app
 
 ### Frontend
 
-1. navigate to frontend folder
-1. install npm dependencies
+1. Navigate to frontend folder
+1. Install npm dependencies
 
-  ```bash
-    npm install
-  ```
+   ```bash
+     npm install
+   ```
 
-1. run e2e test
+1. Run e2e test
 
-  ```bash
-    npm run e2e
-  ```
+   ```bash
+     npm run e2e
+   ```
 
 ### Backend
 
-1. navigate to backend folder
-1. install npm dependencies
+1. Navigate to backend folder
+1. Install npm dependencies
 
-  ```bash
-    npm install
-  ```
+   ```bash
+     npm install
+   ```
 
-1. run unit tests
+1. Run unit tests
 
-  ```bash
-    npm run test
-  ```
+   ```bash
+     npm run test
+   ```
