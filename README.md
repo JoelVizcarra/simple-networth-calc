@@ -12,7 +12,6 @@ Simple Fastify - React net worth calculator app
    ```bash
      docker-compose up -d --build
    ```
-
 1. Navigate to http://localhost:3000 and try the calculator
 
 ## Tests
